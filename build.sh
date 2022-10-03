@@ -4,3 +4,4 @@ docker build -t raxhid/admin:$tag .
 docker login -u raxhid -p tfc@30mcl
 docker push raxhid/admin:$tag
 echo "All OK"
+
