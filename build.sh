@@ -2,7 +2,7 @@ tag=$(date +%Y-%m-%d-%H-%M)
 echo $tag
 docker build -t raxhid/admin:$tag .
 #docker login -u raxhid -p tfc@30mcl
-#test login with stdin
+#teting secrete file and login
 cat secrete | docker login --username raxhid --password-stdin
 docker push raxhid/admin:$tag
 echo "All OK"
