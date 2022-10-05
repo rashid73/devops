@@ -1,5 +1,5 @@
 #tag=$(date +%Y-%m-%d-%H-%M)
-tag=${env.GIT_BRANCH}
+tag=$(git rev-parse --abbrev-ref HEAD | sed 's/[^a-zA-Z0-9]/-/g')
 echo $tag
 docker build -t raxhid/admin:$tag .
 #docker login -u raxhid -p tfc@30mcl
