@@ -1,5 +1,5 @@
 #tag=$(date +%Y-%m-%d-%H-%M)
-tag=${GIT_BRANCH}
+tag=$(echo $GIT_BRANCH   | sed -e "s|origin/||g")
 echo $tag
 docker build -t raxhid/admin:$tag .
 #docker login -u raxhid -p tfc@30mcl
