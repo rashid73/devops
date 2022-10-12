@@ -9,4 +9,4 @@ docker push raxhid/admin:$tag
 echo "All OK"
 #echo "done with build and pushed images to the repository"
 echo "Message changed"
-
+# checking
