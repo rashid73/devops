@@ -1,4 +1,3 @@
-#sh('./build.sh')
 pipeline {
   agent any
 
