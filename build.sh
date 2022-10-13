@@ -10,3 +10,4 @@ echo "All OK"
 #echo "done with build and pushed images to the repository"
 echo "Message changed"
 # checking
+#testing the multibranch pipeline in jenkins
