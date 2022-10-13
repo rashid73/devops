@@ -1,2 +1,1 @@
-chmod +x build.sh
-./build.sh
+sh('./build.sh')
