@@ -4,13 +4,13 @@ pipeline {
   stages {
     stage("This is stage 1") {
       steps {
-       sh( chomd +x build.sh)
+       sh 'chmod +x ${WORKSPACE}/build.sh'
       }
     }
 
     stage("This is stage 2") {
       steps {
-        sh( ./build.sh)
+        sh '${WORKSPACE}/build.sh'
       }
     }
   }
