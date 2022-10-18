@@ -18,5 +18,6 @@ pipeline {
               sh 'echo "docker.io/raxhid/server:$GIT_BRANCH-${BUILD_NUMBER} `pwd`/Dockerfile" > anchore_images'
                 anchore name: 'anchore_images'
             }
+    }
   }
 }
